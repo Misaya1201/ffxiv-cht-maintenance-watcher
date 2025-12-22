@@ -24,7 +24,7 @@ jobs:
 
       - name: Run scraper
         env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_WEBHOOK: ${{ secrets.FFXIV_WEBHOOK_TOKEN }}
         run: python monitor.py
 
       - name: Commit and push if news updated
